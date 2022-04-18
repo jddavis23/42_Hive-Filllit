@@ -6,7 +6,7 @@
 /*   By: jdavis <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 11:53:46 by jdavis            #+#    #+#             */
-/*   Updated: 2022/01/19 11:53:49 by jdavis           ###   ########.fr       */
+/*   Updated: 2022/04/18 16:40:06 by jdavis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,14 @@ int	ft_free_line(char *line)
 	line = NULL;
 	return (-1);
 }
+
+/*
+ * Delete diff (x and y differences based on the previous coordinates, to be able
+ * to locate coordinates on the board without iterating through).
+ *
+ * Deleting piece (relational difference based on a string holding 20 char 
+ * string; 4 x 5 grid).
+ */
 
 void	ft_statsdel_content(t_location *stats)
 {
